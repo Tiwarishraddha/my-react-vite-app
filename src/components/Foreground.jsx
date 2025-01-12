@@ -17,9 +17,28 @@ function Foreground() {
         {
             desc : "Lorem ipsum dolor sit amet consectetur adipisicing.",
             filesize : ".8mb",
-            close : true,
+            close : false,
+            tag : {isOpen : false , tagTitle: "Download Now", tagColor: "green"},
+        },
+        {
+            desc : "Lorem ipsum dolor sit amet consectetur adipisicing.",
+            filesize : ".5mb",
+            close : false,
             tag : {isOpen : true , tagTitle: "Download Now", tagColor: "green"},
         },
+        {
+            desc : "Lorem ipsum dolor sit amet consectetur adipisicing.",
+            filesize : ".6mb",
+            close : true,
+            tag : {isOpen : true , tagTitle: "Upload Now", tagColor: "blue"},
+        },
+        {
+            desc : "Lorem ipsum dolor sit amet consectetur adipisicing.",
+            filesize : ".5mb",
+            close : false,
+            tag : {isOpen : true , tagTitle: "Download Now", tagColor: "green"},
+        },
+        
     ];
     
   return (
