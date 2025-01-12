@@ -4,10 +4,10 @@ import { CgSoftwareDownload } from "react-icons/cg";
 import { IoIosClose } from "react-icons/io";
 import { motion } from 'framer-motion';
 
-const Cards = ({data}) => {
+const Cards = ({data,reference}) => {
   return (
     
-      <motion.div drag className='flex-shrink-0 relative w-60 h-72 rounded-[45px]
+      <motion.div drag dragConstraints = {reference} whileDrag={{scale:1.1}} dragElastic={0.1} className='flex-shrink-0 relative w-60 h-72 rounded-[45px]
        bg-zinc-900/90 z-40 text-white px-5 py-10 overflow-hidden'>
       <LuFileSpreadsheet/>
         <p className='text-sm leading-tight mt-5 font-semibold'>
